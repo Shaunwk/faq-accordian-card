@@ -41,12 +41,15 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     gap: 2rem;
 }
 
 .answers {
     display: none;
+    
 }
+
 
 .faq-title {
     text-align: center;
@@ -57,6 +60,7 @@ section {
 
 .questions:hover {
     color: orange;
+    cursor: pointer;
 }
 
 .image {
@@ -68,5 +72,15 @@ section {
     height: 100%;
     width: 70%;
     margin: 0 auto;
+}
+
+.image-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
 }
 

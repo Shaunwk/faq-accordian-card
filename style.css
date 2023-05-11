@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*applied to everything by default*/
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
@@ -23,55 +24,71 @@ section {
 .card {
     background-color: #fff;
     padding: 1.5rem;
-    
     border-radius: 1rem;
+    max-width: 350px;
     position: relative;
-    padding-top: 8rem;
+    padding-top: 8.5rem;
 }
-
-.line-break {
-    width: 100%;
-    height:.125rem;
-    background-color: hsl(240, 5%, 91%);
-    
-}
-
-.questions {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    gap: 2rem;
-}
-
-.answers {
-    display: none;
-    
-}
-
 
 .faq-title {
     text-align: center;
     font-size: 2rem;
     color: rgb(38, 38, 38);
-    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    /* margin-top: 3rem; */
+    
 }
 
-.questions:hover {
+.accordian-question {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.accordian-answer {
+    margin-bottom: 1.25rem;
+    max-width: 90%;
+    display:none;
+    transition: all .3s ease-in;
+}
+
+
+
+.line-break {
+    width: 100%;
+    height:.125rem;
+    background-color: hsl(240, 5%, 91%);
+    margin-bottom: 1.25rem;
+    
+}
+
+
+
+/* Hover */
+.accordian-question:hover {
     color: orange;
     cursor: pointer;
 }
 
+.active {
+    color:#000;
+    
+}
+
+
 .image {
     position: absolute;
-    top: -15rem;
+    top: -17rem;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
     width: 70%;
     margin: 0 auto;
+    
+    
 }
 
 .image-shadow {
@@ -82,5 +99,14 @@ section {
     right: 0;
     margin: 0 auto;
     width: 70%;
+    
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

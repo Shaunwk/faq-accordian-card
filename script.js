@@ -1,6 +1,6 @@
 const accordianItem = document.querySelectorAll('.accordian-item');
 
-accordianItem.forEach(function(item) {
+accordianItem.forEach(function(item, place) {
   const question = item.querySelector('.accordian-question');
   const answer = item.querySelector('.accordian-answer');
   const arrow = item.querySelector('.accordian-arrow');
